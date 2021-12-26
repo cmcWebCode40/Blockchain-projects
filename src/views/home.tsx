@@ -83,11 +83,9 @@ const Home = ({ validateBlockchain, error }:IHome) => {
           contractAddress: networkData.address,
           contractOwnerAddress: contractOwnerAddress.toLowerCase(),
         }
-
         dispatch({ type: contractActions.loadContract, payload })
       } catch (error) {
-        toast.error(error.message)
-
+        // toast.error(error.message)
       }
     } else {
       validateBlockchain('error')

@@ -96,7 +96,7 @@ const DisplayCard = ({ icon: AvatarIcon, title, value, type }: DisplayCardProps)
       ETH has been sent to address` });
         setOpen(!open)
       } catch (error) {
-        toast.error(error.message)
+        // toast.error(error?.message)
         
       } finally {
         setIsAwaiting(false)
@@ -127,11 +127,11 @@ const DisplayCard = ({ icon: AvatarIcon, title, value, type }: DisplayCardProps)
     )
   }
 
-  const onClose = () => {
-    setMessage({
-      status: 'success', isOpen: false, message: ``
-    })
-  }
+  // const onClose = () => {
+  //   setMessage({
+  //     status: 'success', isOpen: false, message: ``
+  //   })
+  // }
 
   const CustomAlert = () => {
     return (
