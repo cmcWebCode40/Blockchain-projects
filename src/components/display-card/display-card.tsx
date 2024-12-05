@@ -28,7 +28,6 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     fontWeight: 700
   },
   avatar: {
-    // backgroundColor: theme.palette.error.main,
     height: 56,
     width: 56
   },
@@ -36,7 +35,6 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     height: 40,
     width: 40,
     display: 'block',
-    // margin:'1rem 0'
 
   },
   difference: {
@@ -126,12 +124,6 @@ const DisplayCard = ({ icon: AvatarIcon, title, value, type }: DisplayCardProps)
       </>
     )
   }
-
-  // const onClose = () => {
-  //   setMessage({
-  //     status: 'success', isOpen: false, message: ``
-  //   })
-  // }
 
   const CustomAlert = () => {
     return (
